@@ -1,0 +1,23 @@
+.table-pagination {
+  .page-item {
+    .page-link {
+      font-size: 11px;
+      color: #4b5564;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    &.active {
+      .page-link {
+        background-color: #ffff;
+        border-color: #ffff;
+        color: #4b5564;
+      }
+    }
+  }
+}
+
+.table-page {
+  direction: flex;
+  justify-content: flex-end;
+}
