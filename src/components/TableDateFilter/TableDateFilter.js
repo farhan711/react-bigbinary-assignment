@@ -56,7 +56,6 @@ const DateWrapper = styled.div`
 `;
 
 const TableDateFilter = ({ selected, setSelected, defaultRanges }) => {
-console.log(defaultRanges,'=====defaultRanges')
   const [startDate, setStartDate] = React.useState(new Date());
   const [endDate, setEndDate] = React.useState(null);
   const [showModal, setShowModal] = React.useState(false);
