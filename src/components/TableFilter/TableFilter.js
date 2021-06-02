@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import PropTypes from 'prop-types'
 import Filter from '../../images/filter.png';
 import arrow from '../../images/arrow.png';
 import closeClicker from '../../utils/DisClicker';

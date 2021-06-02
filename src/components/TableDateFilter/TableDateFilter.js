@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from "react";
 import styled from 'styled-components';
 import DatePicker from 'react-datepicker';
 import PageModal from '../PageModal/PageModal';
+import PropTypes from 'prop-types'
 import arrow from '../../images/arrow.png';
 import calendar from '../../images/calendar.png';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -55,9 +56,10 @@ const DateWrapper = styled.div`
 `;
 
 const TableDateFilter = ({ selected, setSelected, defaultRanges }) => {
-  const [startDate, setStartDate] = useState(new Date());
-  const [endDate, setEndDate] = useState(null);
-  const [showModal, setShowModal] = useState(false);
+console.log(defaultRanges,'=====defaultRanges')
+  const [startDate, setStartDate] = React.useState(new Date());
+  const [endDate, setEndDate] = React.useState(null);
+  const [showModal, setShowModal] = React.useState(false);
   const onChange = (dates) => {
     const [start, end] = dates;
     setStartDate(start);

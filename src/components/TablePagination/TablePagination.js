@@ -1,7 +1,7 @@
 import React from 'react';
 import Pagination from 'react-js-pagination';
-
-import './Pagination.scss';
+import PropTypes from 'prop-types'
+import './TablePagination.scss';
 
 const TablePagination = ({ totalCount, onChange, activePage, countPerPage }) => {
   return (

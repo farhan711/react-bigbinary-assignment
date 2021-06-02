@@ -2,12 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Switch>
+      <Route
+        exact
+        path={["/", "/:filter/:dateFilter/:startDate/:endDate/:page"]}
+      >
+        <App />
+      </Route>
+    </Switch>
+  </Router>,
   document.getElementById('root')
 );
 

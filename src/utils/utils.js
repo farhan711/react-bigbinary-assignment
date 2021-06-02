@@ -1,3 +1,5 @@
+import React, { Component }  from 'react';
+
 import startOfWeek from 'date-fns/startOfWeek';
 import subMonths from 'date-fns/subMonths';
 import endOfMonth from 'date-fns/endOfMonth';
