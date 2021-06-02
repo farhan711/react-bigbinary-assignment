@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import DatePicker from 'react-datepicker';
 import PageModal from '../PageModal/PageModal';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import arrow from '../../images/arrow.png';
 import calendar from '../../images/calendar.png';
 import 'react-datepicker/dist/react-datepicker.css';

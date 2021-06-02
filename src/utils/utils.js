@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React, { Component } from 'react';
 
 import startOfWeek from 'date-fns/startOfWeek';
 import subMonths from 'date-fns/subMonths';
@@ -21,14 +21,14 @@ export const Options = [
 export const getURLPath = (value, date) => {
   let path = '';
   switch (value) {
-    case 'successLaunches':
+    case 'upcoming':
+      path = '/upcoming?';
+      break;
+    case 'launchSuccess':
       path = '?launch_success=true&';
       break;
-    case 'failedLaunches':
+    case 'launchFailed':
       path = '?launch_success=false&';
-      break;
-    case 'nextLaunches':
-      path = '/upcoming?';
       break;
     default:
       path = '';
@@ -92,7 +92,7 @@ export const getStatus = (launchSuccess, upcoming) => {
   return <span className={`round-span ${status}`}>{status}</span>;
 };
 
-export const getUrl = ({ date, pageNumber, filter, }) => {
+export const getUrl = ({ date, pageNumber, filter }) => {
   return `/${filter}/${date.label.replace(/\s/g, '-')}/${format(
     date.value[0],
     'yyyy-MM-dd'

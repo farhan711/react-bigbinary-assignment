@@ -24,11 +24,13 @@ const TableComponent = ({ data, rowClick, loading, titles }) => {
                 {data.map((element, index) => (
                   <tr key={index} className="pageTableRowItem" onClick={() => rowClick(el)}>
                     <td>{element.flight_number}</td>
-                    <td>
-                      {format(parseISO(element.launch_date_utc), "dd MMMM yyyy 'at' HH:mm")}
-                    </td>
+                    <td>{format(parseISO(element.launch_date_utc), "dd MMMM yyyy 'at' HH:mm")}</td>
                     <td>{element.mission_name}</td>
-                    <td>{element.rocket.second_stage.payloads.map((element) => element.orbit).join(', ')}</td>
+                    <td>
+                      {element.rocket.second_stage.payloads
+                        .map((element) => element.orbit)
+                        .join(', ')}
+                    </td>
                     <td>{element.upcoming}</td>
                     <td>{element.rocket.rocket_name}</td>
                   </tr>

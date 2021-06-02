@@ -1,3 +1,5 @@
+@@ -1,70 +0,0 @@
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +70,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Components
+
+#### Header Component
+
+![Header component](https://i.ibb.co/WDwT83p/Screenshot-2021-06-02-at-4-50-28-PM.png)
+
+#### Date Component
+
+![Date Component](https://i.ibb.co/xCktnWm/Screenshot-2021-06-02-at-4-56-09-PM.png)
+
+#### Filter Component
+
+![Filter Component](https://i.ibb.co/T8M5mZ3/Screenshot-2021-06-02-at-4-57-35-PM.png)
+
+#### Table Component
+
+![Filter Component](https://i.ibb.co/sjDS4nc/Screenshot-2021-06-02-at-4-59-01-PM.png)
