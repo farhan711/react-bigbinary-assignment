@@ -1,6 +1,6 @@
 import React from 'react';
 import { Modal } from 'react-bootstrap';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 const PageModal = ({ className, header, modalBody, ...props }) => {
   return (

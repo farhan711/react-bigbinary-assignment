@@ -78,7 +78,9 @@ function App({ match, history }) {
       );
       setTableLoading(true);
       const path = getURLPath(filter, dateFilter);
-      const result = await generateAxiosAPICall().get(`/launch${path}&limit=12&set=${pageOffset}`);
+      const result = await generateAxiosAPICall().get(
+        `/launches${path}&limit=12&set=${pageOffset}`
+      );
       const {
         headers: { [`spacex-api-count`]: count },
         status,
