@@ -1,0 +1,39 @@
+.table-pointer {
+  cursor: pointer;
+}
+
+.table-filter-container {
+  position: relative;
+  .table-selected-filter {
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    z-index: 1;
+    .label {
+      font-size: 15px;
+      line-height: 15px;
+      font-weight: 600;
+    }
+    span {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      padding: 8px 10px;
+      font-size: 15px;
+      line-height: 15px;
+      cursor: pointer;
+      &.selected {
+        background: #f4f5f7;
+      }
+      &:hover {
+        background: #f4f5f7;
+      }
+    }
+  }
+}
